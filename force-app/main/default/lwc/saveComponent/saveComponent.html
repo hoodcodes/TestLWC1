@@ -1,0 +1,31 @@
+<template>
+  <div class="slds-m-top_small slds-m-bottom_medium">
+    <!-- Neutral variant (default) -->
+    <lightning-button
+      label="Cancel"
+      title="Non-primary action"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+
+    <!-- Neutral variant (default) -->
+    <lightning-button
+      label="Save &amp; New"
+      title="Non-primary action"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+
+    <!-- Neutral variant (default) -->
+    <lightning-button
+      label="Save"
+      title="Primary action"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+  </div>
+
+  <div class="slds-m-vertical_medium">
+    <p><span class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+  </div>
+</template>
